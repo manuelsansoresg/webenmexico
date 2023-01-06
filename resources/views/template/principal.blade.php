@@ -561,7 +561,7 @@
     <!-- comments start -->
     <div class="container-fluid bg-light py-5 my-5" id="testimonial">
         <div class="container-fluid py-5">
-            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Comentarios</h1>
+            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Preguntas y Comentarios</h1>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6">
                    <div class="row mt-2">
