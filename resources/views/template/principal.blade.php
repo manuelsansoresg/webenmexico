@@ -135,7 +135,6 @@
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Precios accesibles</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Producto de alta calidad</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Sitio web posicionado en google</p>
-                    {{-- <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a> --}}
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-3 mb-4">
