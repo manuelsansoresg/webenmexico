@@ -558,7 +558,59 @@
     </div>
     <!-- Testimonial End -->
 
-
+    <!-- comments start -->
+    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Comentarios</h1>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                   <div class="row mt-2">
+                        <div class="col-6">
+                            <p class="small">Manuel sansores</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <p class="small">30 - marzo - 2020</p>
+                        </div>
+                        <div class="col-12">
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dicta recusandae sequi magni atque eligendi iusto, tempore, asperiores consequatur nostrum nisi qui sit facilis reiciendis numquam exercitationem cumque praesentium libero.
+                            </span>
+                        </div>
+                        <hr class="mt-2">
+                   </div>
+                   <div class="row mt-2">
+                        <div class="col-6">
+                            <p class="small">Daniel manzano</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <p class="small">30 - marzo - 2020</p>
+                        </div>
+                        <div class="col-12">
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dicta recusandae sequi magni atque eligendi iusto, tempore, asperiores consequatur nostrum nisi qui sit facilis reiciendis numquam exercitationem cumque praesentium libero.
+                            </span>
+                        </div>
+                        <hr class="mt-2">
+                   </div>
+                   <div class="row mt-2">
+                        <div class="col-6">
+                            <p class="small">Julion alvarez</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <p class="small">30 - marzo - 2020</p>
+                        </div>
+                        <div class="col-12">
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dicta recusandae sequi magni atque eligendi iusto, tempore, asperiores consequatur nostrum nisi qui sit facilis reiciendis numquam exercitationem cumque praesentium libero.
+                            </span>
+                        </div>
+                        <hr class="mt-2">
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- comments End -->
     <!-- Contact Start -->
     <div class="container-xxl pb-5" id="contact">
         <div class="container py-5">
