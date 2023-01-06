@@ -349,7 +349,7 @@
                         </div>
                         <div class="ms-sm-4">
                             <h4 class="mb-3">Sitios óptimos</h4>
-                            {{-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> --}}
+                            {{-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> --}} 
                             <span>Nuestro sitio web solo contiene lo necesario para hacerlo rápido , funcional y seguro usamos un sistema propio desarrollado para crear sitios web seguros y practicos.</span>
                         </div>
                     </div>
