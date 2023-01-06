@@ -129,7 +129,7 @@
                             <h1 class="display-1 mb-0">15</h1>
                             <h5 class="mb-0">Años</h5>
                         </div>
-                        <h3 class="lh-base mb-0">de experiencia laboral como diseñador y desarrollador web</h3>
+                        <h3 class="lh-base mb-0">desarrollando sitios web amigables y creativos.</h3>
                     </div>
                     <p class="mb-4">¿Quieres que tu negocio crezca? Obtén tú sitio web y platica tus necesidades con nuestros asesores altamente capacitados .</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Precios accesibles</p>
