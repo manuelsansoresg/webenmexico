@@ -79,7 +79,7 @@
                     <h3 class="text-primary mb-3">Tú</h3>
                     <h1 class="display-3 mb-3">Constructor web</h1>
                     <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Páginas a un precio accesible, Páginas web rápidas, Páginas web seguras </div>
+                    <div class="typed-text d-none">Páginas a un precio accesible, De alta calidad, Rápidas y seguras  </div>
                     <div class="d-flex align-items-center pt-5">
                         <a href="" class="btn btn-primary py-3 px-4 me-5">Saber más</a>
                      {{--    <button type="button" class="btn-play" data-bs-toggle="modal"
@@ -131,10 +131,10 @@
                         </div>
                         <h3 class="lh-base mb-0">de experiencia laboral como diseñador y desarrollador web</h3>
                     </div>
-                    <p class="mb-4">¿Quieres que tu negocio crezca? Crea sitios web informativos de manera sencilla y rápida</p>
+                    <p class="mb-4">¿Quieres que tu negocio crezca? Obtén tú sitio web y platica tus necesidades con nuestros asesores altamente capacitados .</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Precios accesibles</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Producto de alta calidad</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Constructor simple y rápido</p>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Sitio web posicionado en google</p>
                     {{-- <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a> --}}
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -150,7 +150,7 @@
                         <h5 class="border-end pe-3 me-3 mb-0">Clientes felices</h5>
                         <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
                     </div>
-                    <p class="mb-4">Muchos de nuestros clientes cuentan con mas de 1 sitio web para dar a conocer sus negocios y múltiples servicios.</p>
+                    <p class="mb-4">Contamos con muchos clientes fieles,  con sitios bien posicionados en google , rápidos, seguros y a un buen precio. Se como ellos y únete a nuestra familia.</p>
                     <div class="d-flex align-items-center mb-3">
                         <h5 class="border-end pe-3 me-3 mb-0">Páginas alojadas</h5>
                         <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
@@ -326,7 +326,7 @@
                         <div class="ms-sm-4">
                             <h4 class="mb-3">Diseños creativos</h4>
                             {{-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> --}}
-                            <span>Realiza sitios web con herramientas que te facilitan la construcción, no necesitas conocimiento ya que nuestra interfaz es amigable para los usuarios.</span>
+                            <span>Realizamos tu  sitio web en base a tus necesidades,  con diseños que se apeguen a tu empresa.</span>
                         </div>
                     </div>
                 </div>
@@ -350,7 +350,7 @@
                         <div class="ms-sm-4">
                             <h4 class="mb-3">Sitios óptimos</h4>
                             {{-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> --}}
-                            <span>Nuestro sitio web solo contiene lo necesario para hacerlo rápido , funcional y seguro, olvídate de los molestos plugins y constantes actualizaciones del sitio.</span>
+                            <span>Nuestro sitio web solo contiene lo necesario para hacerlo rápido , funcional y seguro usamos un sistema propio desarrollado para crear sitios web seguros y practicos.</span>
                         </div>
                     </div>
                 </div>
@@ -362,7 +362,7 @@
                         <div class="ms-sm-4">
                             <h4 class="mb-3">UI/UX</h4>
                             {{-- <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6> --}}
-                            <span>Nuestro constructor web tiene una interfaz amigable para cualquier tipo de usuario, y actualizaciones periódicas y automáticas en las herramientas que te ayudaran a construir tu sitio web profesional.</span>
+                            <span>Obtén tu sitio web con un diseño amigable que llevara al cliente a entender tus servicios y productos.</span>
                         </div>
                     </div>
                 </div>
