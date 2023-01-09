@@ -565,6 +565,10 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6">
                    <div class="row mt-2">
+                        <div class="col-12  text-end py-3">
+                            <a class="btn btn-primary py-3 px-5"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalcomment">Comentar</a>
+                        </div>
+                        
                         <div class="col-6">
                             <p class="small">Manuel sansores</p>
                         </div>
@@ -707,6 +711,39 @@
             </div>
         </div>
     </div>
+
+    {{-- modal comentario --}}
+    <!-- Modal -->
+<div class="modal fade" id="modalcomment" tabindex="-1" aria-labelledby="modalcommentLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="frm-comment">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalcommentLabel">Realiza un comentario o una pregunta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            
+                @csrf
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" name="comment[name]" placeholder="Introduce tú nombre completo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputComment" class="form-label">Comentario</label>
+                    <textarea name="comment[comment]" cols="30" rows="5" class="form-control" required></textarea>
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Comentar</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    {{-- /modal comentario --}}
     <!-- Copyright End -->
 
 
@@ -728,6 +765,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

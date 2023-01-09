@@ -10819,6 +10819,3 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.image-carousel {
-  filter: brightness(50%);
-}
