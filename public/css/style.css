@@ -6,7 +6,7 @@
     --dark: #12141D;
 }
 
-#recaptcha-element{
+#content-recaptcha>#recaptcha-element{
     float: right;
 }
 .back-to-top {

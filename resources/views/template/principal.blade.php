@@ -697,7 +697,7 @@
                                     <label for="message">Mensaje</label>
                                 </div>
                             </div>
-                            <div class="col-12 text-end">
+                            <div class="col-12 text-end" id="content-recaptcha">
                                 {!! htmlFormSnippet() !!}
                             </div>
                             <div class="col-12 text-end">
