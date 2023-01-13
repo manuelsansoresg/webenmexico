@@ -19,6 +19,7 @@ class CreateComment extends Migration
             $table->string('comment');
             $table->smallInteger('is_admin')->default(0);
             $table->string('ip')->nullable();
+            $table->smallInteger('active')->default(0);
             $table->timestamps();
         });
     }

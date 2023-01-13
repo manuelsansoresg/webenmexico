@@ -25,11 +25,13 @@ class HomeController extends Controller
     public function index()
     {
         $this->middleware('auth');
-        return view('home');
+        $comments = Comment::all();
+        return view('main', compact('comments'));
     }
 
     public function comment(Request $request)
     {
-        Comment::saveComment($request->comment);
+        $comment = Comment::saveComment($request);
+        return response()->json($comment);
     }
 }

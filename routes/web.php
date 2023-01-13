@@ -20,4 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::post('comment', [App\Http\Controllers\HomeController::class, 'comment'])->name('home');
+Route::post('comment', [App\Http\Controllers\HomeController::class, 'comment']);
+Route::resource('admincomment', App\Http\Controllers\CommentController::class);
+Route::get('admincomment/{id}/comment/delete', [App\Http\Controllers\CommentController::class, 'destroy']);

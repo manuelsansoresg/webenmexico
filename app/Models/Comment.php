@@ -13,9 +13,9 @@ class Comment extends Model
         'name',
         'comment',
         'is_admin',
-        'ip'
+        'ip',
+        'active'
     ];
-
     public function getRealIp()
     {
         if (isset($_SERVER["HTTP_CLIENT_IP"])) {
@@ -32,31 +32,33 @@ class Comment extends Model
             return $_SERVER["REMOTE_ADDR"];
         }
     }
-    //TODO: en el javascript instalar sweet alert y avisar que ya se guardo el comentario
-    //TODO: probar que el comentario se guardo y no deje comentar de nuevo hasta 1 dia despues, probar la validacion con hora
-    //TODO: crear en el panel admin que pueda guardar sin restriccion
-
-    public static function saveComment($request)
+    public static function saveComment($request, $is_admin = false)
     {
         $get_ip               = self::getRealIp();
         $get_comment_ip       = Comment::where('ip', $get_ip)->orderBy('created_at', 'DESC')->first();
         $data_comment         = $request->comment;
-        $data_comment['ip']   = $get_comment_ip;
+        $data_comment['ip']   = $get_ip;
         $is_save              = true;
-
-        if ($get_comment_ip != null) {
+        if ($get_comment_ip != null && $is_admin == false) {
             $fecha1 = new DateTime($get_comment_ip->created_at);//fecha inicial
             $fecha2 = new DateTime(date('Y-m-d H:i:s'));//fecha de cierre
             $intervalo = $fecha1->diff($fecha2);
             $hour = $intervalo->format('%h');
             $day = $intervalo->format('%d');
-            if ($day < 1) {
-                $is_save = true;
+            if ($hour < 1) {
+                $is_save = false;
             }
         }
 
         if ($is_save === true) {
             Comment::create($data_comment);
         }
+        return $is_save;
+    }
+
+    public function getActive()
+    {
+        $comment = Comment::where('active', 1)->get();
+        return $comment;
     }
 }
