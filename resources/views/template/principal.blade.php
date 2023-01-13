@@ -802,7 +802,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js?id={{ date('Y-m-dH:i:s') }}"></script>
 </body>
 
 </html>
