@@ -6,6 +6,10 @@
     --dark: #12141D;
 }
 
+#recaptcha-element{
+    float: right;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
