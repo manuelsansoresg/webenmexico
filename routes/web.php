@@ -22,5 +22,6 @@ Auth::routes(["register" => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('comment', [App\Http\Controllers\HomeController::class, 'comment']);
+Route::post('contact', [App\Http\Controllers\HomeController::class, 'contact']);
 Route::resource('admincomment', App\Http\Controllers\CommentController::class);
 Route::get('admincomment/{id}/comment/delete', [App\Http\Controllers\CommentController::class, 'destroy']);

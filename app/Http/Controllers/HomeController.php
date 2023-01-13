@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
 {
@@ -33,5 +34,18 @@ class HomeController extends Controller
     {
         $comment = Comment::saveComment($request);
         return response()->json($comment);
+    }
+
+    public function contact(Request $request)
+    {
+        $validator = Validator::make(request()->all(), [
+            'g-recaptcha-response' => 'recaptcha',
+        ]);
+        $error = false;
+        // Verificamos si hay algún error
+        if($validator->fails()) {
+            $error = true;
+        }
+        return response()->json($error);
     }
 }

@@ -40,6 +40,26 @@ $("#frm-comment-admin").submit(function (event) {
         
 });
 
+$("#frm-contact").submit(function (event) {
+    event.preventDefault();
+    const form = document.getElementById('frm-contact');
+    let data = new FormData(form);
+
+    axios.post('/contact', data)
+        .then(function (response) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Estado.',
+            text: 'Gracias por escribirnos en breve un asesor te contactara',
+            confirmButtonText:'Aceptar',
+          })
+        })
+        .catch(error => {
+            
+        });
+        
+});
+
 window.deleteComment = function(comment_id) {
   Swal.fire({
     title: '¿Estas seguro que deseas borrar el comentario?',

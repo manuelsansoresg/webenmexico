@@ -32,6 +32,7 @@
 
     <!-- Template Stylesheet -->
     <link href="/css/style.css" rel="stylesheet">
+    {!! htmlScriptTagJsApi(['lang' => 'es']) !!}
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -86,7 +87,7 @@
                     <div class="typed-text d-none">Páginas a un precio accesible, De alta calidad, Rápidas y seguras
                     </div>
                     <div class="d-flex align-items-center pt-5">
-                        <a href="" class="btn btn-primary py-3 px-4 me-5">Saber más</a>
+                        <a href="#contact" class="btn btn-primary py-3 px-4 me-5">Saber más</a>
                         {{--    <button type="button" class="btn-play" data-bs-toggle="modal"
                             data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                             <span></span>
@@ -670,31 +671,34 @@
                     <p class="mb-4">Contactanos y nos comunicaremos contigo a la brevedad posible, podremos responder
                         a cualquier duda y ofrecerte el mejor servicio para volver realidad tus ideas en la construcción
                         de tu sitio web.</p>
-                    <form>
+                    <form id="frm-contact">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Nombre">
+                                    <input type="text" class="form-control" name="name" placeholder="Nombre" required>
                                     <label for="name">Nombre</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Correo">
+                                    <input type="email" class="form-control" name="email" placeholder="Correo" required>
                                     <label for="email">Correo</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Asunto">
+                                    <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
                                     <label for="subject">Asunto</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" name="message" style="height: 100px" required></textarea>
                                     <label for="message">Mensaje</label>
                                 </div>
+                            </div>
+                            <div class="col-12">
+                                {!! htmlFormSnippet() !!}
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary py-3 px-5" type="submit">Enviar mensaje</button>
