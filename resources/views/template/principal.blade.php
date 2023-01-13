@@ -700,7 +700,7 @@
                             <div class="col-12">
                                 {!! htmlFormSnippet() !!}
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 text-end">
                                 <button class="btn btn-primary py-3 px-5" type="submit">Enviar mensaje</button>
                             </div>
                         </div>
