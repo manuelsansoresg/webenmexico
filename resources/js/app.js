@@ -47,6 +47,7 @@ $("#frm-contact").submit(function (event) {
 
     axios.post('/contact', data)
         .then(function (response) {
+          $('#frm-contact')[0].reset();
           Swal.fire({
             icon: 'success',
             title: 'Estado.',
